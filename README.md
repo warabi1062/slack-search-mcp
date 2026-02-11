@@ -33,15 +33,15 @@ Slack のメッセージ検索・スレッド読み込みを行う Claude Code �
 
 | 環境変数 | トークン種別 | 対応ツール |
 |----------|-------------|-----------|
-| `SLACK_BOT_TOKEN` | Bot User OAuth Token (`xoxb-...`) | `get_message`, `get_thread`, `get_context` |
-| `SLACK_USER_TOKEN` | User OAuth Token (`xoxp-...`) | `search_messages` |
+| `SLACK_SEARCH_MCP_BOT_TOKEN` | Bot User OAuth Token (`xoxb-...`) | `get_message`, `get_thread`, `get_context` |
+| `SLACK_SEARCH_MCP_USER_TOKEN` | User OAuth Token (`xoxp-...`) | `search_messages` |
 
 ```bash
 # メッセージ取得・スレッド取得・前後の会話取得を使う場合
-export SLACK_BOT_TOKEN=xoxb-your-bot-token
+export SLACK_SEARCH_MCP_BOT_TOKEN=xoxb-your-bot-token
 
 # キーワード検索を使う場合
-export SLACK_USER_TOKEN=xoxp-your-user-token
+export SLACK_SEARCH_MCP_USER_TOKEN=xoxp-your-user-token
 ```
 
 ### 3. プラグインのインストール

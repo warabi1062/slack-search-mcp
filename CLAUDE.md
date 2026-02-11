@@ -38,7 +38,7 @@ slack-search-mcp/
 - TypeScript strict モード有効
 - ESM (ES Modules) を使用
 - エラーは適切な MCP エラーレスポンスとして返す（プロセスを落とさない）
-- Slack API トークンは環境変数 `SLACK_BOT_TOKEN` から取得
+- Slack API トークンは環境変数 `SLACK_SEARCH_MCP_BOT_TOKEN` から取得
 - ハードコードされたトークンやワークスペース名を含めないこと
 
 ## 主要な設計判断

@@ -13,10 +13,10 @@ let userClient: WebClient | null = null;
 export function getBotClient(): WebClient {
   if (botClient) return botClient;
 
-  const token = process.env.SLACK_BOT_TOKEN;
+  const token = process.env.SLACK_SEARCH_MCP_BOT_TOKEN;
   if (!token) {
     throw new SlackApiError(
-      "SLACK_BOT_TOKEN environment variable is not set. Please set it to your Slack Bot token (xoxb-...)."
+      "SLACK_SEARCH_MCP_BOT_TOKEN environment variable is not set. Please set it to your Slack Bot token (xoxb-...)."
     );
   }
 
@@ -27,10 +27,10 @@ export function getBotClient(): WebClient {
 export function getUserClient(): WebClient {
   if (userClient) return userClient;
 
-  const token = process.env.SLACK_USER_TOKEN;
+  const token = process.env.SLACK_SEARCH_MCP_USER_TOKEN;
   if (!token) {
     throw new SlackApiError(
-      "SLACK_USER_TOKEN environment variable is not set. Please set it to your Slack User token (xoxp-...)."
+      "SLACK_SEARCH_MCP_USER_TOKEN environment variable is not set. Please set it to your Slack User token (xoxp-...)."
     );
   }
 
@@ -201,7 +201,7 @@ function formatSlackError(error: unknown): string {
       return "Channel not found. Please check the channel ID.";
     }
     if (error.message.includes("invalid_auth")) {
-      return "Invalid Slack token. Please check your SLACK_BOT_TOKEN / SLACK_USER_TOKEN.";
+      return "Invalid Slack token. Please check your SLACK_SEARCH_MCP_BOT_TOKEN / SLACK_SEARCH_MCP_USER_TOKEN.";
     }
     return `Slack API error: ${error.message}`;
   }
