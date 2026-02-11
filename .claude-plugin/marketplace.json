@@ -1,0 +1,11 @@
+{
+  "name": "slack-search-mcp-marketplace",
+  "owner": { "name": "miurakohei" },
+  "plugins": [
+    {
+      "name": "slack-search-mcp",
+      "source": "./",
+      "description": "Slack メッセージの取得・スレッド読み込み・キーワード検索を行う MCP サーバー"
+    }
+  ]
+}

@@ -1,11 +1,8 @@
 {
   "mcpServers": {
     "slack-search-mcp": {
-      "type": "stdio",
       "command": "node",
-      "args": [
-        "/Users/miurakohei/git/slack-search-mcp/dist/index.js"
-      ],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/index.mjs"],
       "env": {
         "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
         "SLACK_USER_TOKEN": "${SLACK_USER_TOKEN}"

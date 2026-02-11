@@ -1,0 +1,8 @@
+{
+  "name": "slack-search-mcp",
+  "description": "Slack メッセージの取得・スレッド読み込み・キーワード検索を行う MCP サーバー",
+  "version": "1.0.0",
+  "author": { "name": "miurakohei" },
+  "license": "MIT",
+  "keywords": ["slack", "search", "mcp"]
+}
