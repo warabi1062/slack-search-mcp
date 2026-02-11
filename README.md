@@ -46,8 +46,9 @@ export SLACK_USER_TOKEN=xoxp-your-user-token
 
 ### 3. プラグインのインストール
 
-```bash
-claude plugin install slack-search-mcp
+```
+/plugin marketplace add warabi1062/slack-search-mcp
+/plugin install slack-search-mcp@slack-search-mcp-marketplace
 ```
 
 ## ツール一覧

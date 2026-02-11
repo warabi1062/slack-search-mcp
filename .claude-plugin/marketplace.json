@@ -1,6 +1,6 @@
 {
   "name": "slack-search-mcp-marketplace",
-  "owner": { "name": "miurakohei" },
+  "owner": { "name": "warabi" },
   "plugins": [
     {
       "name": "slack-search-mcp",
